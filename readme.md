@@ -27,13 +27,6 @@ Training Algorithm
 		SFT trainer
 
 
-working commands
-
-	english
-
-	!autotrain llm --train --project-name mistral-7b-mj-finetuned --model filipealmeida/Mistral-7B-Instruct-v0.1-sharded --data-path . --use-peft --quantization int4 --lr 2e-4 --batch-size 12 --epochs 3 --trainer sft --target_modules q_proj,v_proj --push-to-hub --token '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' --repo-id Swapnilg915/mistral-7b-mj-finetuned
-
-
 
 ### Steps for Inference:
 
