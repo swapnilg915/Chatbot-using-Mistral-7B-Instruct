@@ -18,7 +18,7 @@ Training Algorithm
 2. Download the dataset. Convert it into a required format by our LLM Mistral 7B instruct. Save in the current working directory.
 3. Run the training command using huggingface autotrain with other necessary params.
 
-	!autotrain llm --train --project-name mistral-7b-mj-finetuned --model filipealmeida/Mistral-7B-Instruct-v0.1-sharded --data-path . --use-peft --quantization int4 --lr 2e-4 --batch-size 12 --epochs 3 --trainer sft --target_modules q_proj,v_proj --push-to-hub --token <your Huggingface write token> --repo-id <your huggingface repo name>/<model name you are going to push>
+	!autotrain llm --train --project-name mistral-7b-mj-finetuned --model filipealmeida/Mistral-7B-Instruct-v0.1-sharded --data-path . --use-peft --quantization int4 --lr 2e-4 --batch-size 12 --epochs 3 --trainer sft --target_modules q_proj,v_proj --push-to-hub --token "your Huggingface write token" --repo-id "your huggingface repo name"/"model name you are going to push"
 
 	Here we are using 
 		"Mistral-7B-Instruct-v0.1-sharded" as a baseline LLM
